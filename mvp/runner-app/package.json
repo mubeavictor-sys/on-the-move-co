@@ -1,0 +1,20 @@
+{
+  "name": "runner-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "^3.0.2",
+    "axios": "^1.16.0",
+    "lucide-react-native": "^1.14.0",
+    "react-native-geolocation-service": "^5.3.1",
+    "react-native-maps": "^1.27.2"
+  }
+}
