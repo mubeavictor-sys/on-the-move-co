@@ -15,7 +15,7 @@ services:
           name: on-the-move-db
           property: connectionString
       - key: REDIS_URL
-        sync: false
+        value: ""
 
 databases:
   - name: on-the-move-db
