@@ -3,8 +3,8 @@ services:
     name: on-the-move-api
     env: node
     plan: free
-    buildCommand: npm install
-    startCommand: npm start
+    buildCommand: cd mvp/backend && npm install
+    startCommand: cd mvp/backend && npm start
     envVars:
       - key: NODE_ENV
         value: production
@@ -15,16 +15,8 @@ services:
           name: on-the-move-db
           property: connectionString
       - key: REDIS_URL
-        fromService:
-          type: redis
-          name: on-the-move-cache
-          property: connectionString
+        sync: false
 
 databases:
   - name: on-the-move-db
     plan: free
-
-redis:
-  - name: on-the-move-cache
-    plan: free
-    ipAllowList: [] # only allow internal connections
