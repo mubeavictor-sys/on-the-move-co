@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import api from '../api';
-import { MapPin, Info, Send, ShoppingCart } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 
 const BookErrand: React.FC = () => {
   const [formData, setFormData] = useState({

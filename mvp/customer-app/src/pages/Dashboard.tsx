@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import api from '../api';
 import { useAuth } from '../context/AuthContext';
-import { Plus, Package, Clock, CheckCircle } from 'lucide-react';
+import { Plus, Clock } from 'lucide-react';
 
 const Dashboard: React.FC = () => {
   const [errands, setErrands] = useState<any[]>([]);
